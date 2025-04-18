@@ -20,3 +20,17 @@ console.log(age);
 
 const country = "India";
 console.log(country); // Output: India
+
+function testVar() {
+  if (true) {
+    var x = 10; // var is function-scoped
+  }
+}
+
+function testlet() {
+  if (true) {
+    let y = 20; // let is block-scoped
+  }
+}
+testVar();
+testlet();
